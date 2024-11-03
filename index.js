@@ -42,7 +42,6 @@ function submitData(name, email){
         return response.json();
       })
       .then(function(object) {
-        // Assuming the response object has an id field
         document.body.innerHTML = `User ID: ${object.id}`;
       })
       .catch(function(error) {
